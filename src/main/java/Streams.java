@@ -12,6 +12,25 @@ public class Streams {
         );
         Set<String> set = new HashSet<>();
 
+        //        Print all elements of a list using streams.
+//        Filter even numbers from a list of integers.
+//        Filter strings that start with a specific letter (e.g., 'A').
+//        Count elements in a list using streams.
+//                Find the first element in a stream.
+//        Check if any string in a list has length > 5.
+//        Convert a list of strings to uppercase.
+//      Sort a list of integers in descending order.
+//                Sort a list of strings in reverse alphabetical order.
+        //Remove duplicates from a list using streams.
+        //Find the maximum and minimum numbers in a list.
+        //Join all strings from a list into a single comma-separated string.
+        //Group a list of strings by their length.
+        //Count occurrences of each word in a list (word frequency).
+        //Partition a list of numbers into even and odd.
+        //Flatten a list of lists into a single list using flatMap.
+        //Find the second-highest number in a list using stream.
+        //Find duplicate elements in a list using streams.
+
 //        Print all elements of a list using streams.
         list1.stream()
                 .forEach(x -> System.out.println(x));

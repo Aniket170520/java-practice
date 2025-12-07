@@ -5,6 +5,7 @@ public class PaymentContext {
 
     public PaymentContext paymentContext(PaymentStrategy paymentStrategy){
         this.paymentStrategy = paymentStrategy;
+        return null;
     }
 
     public void setPaymentStrategy(PaymentStrategy paymentStrategy) {

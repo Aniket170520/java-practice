@@ -1,3 +1,4 @@
+import dsa.Pattern;
 import streams.Employee;
 import streams.MapStreams;
 import streams.Streams;
@@ -7,6 +8,7 @@ public class Main {
 //        Streams.javaStreams();
 //        code.MapPractice.mapPreparation();
 //        Employee.objectStreams();
-        MapStreams.practiceMapStreams();
+//        MapStreams.practiceMapStreams();
+        Pattern.learnPattern();
     }
 }

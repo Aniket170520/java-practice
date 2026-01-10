@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Streams {
     public static void javaStreams() {
-        List<Integer> list = new ArrayList<>(Arrays.asList(11, 23, 1, 2, 3, 4, 5, 6, 7, 8, 1, 5, 7));
+        List<Integer> list = new ArrayList<>(Arrays.asList(11, 23, 1, 2, 3, 4, 5, 6, 7, 8, 1, 5, 7, 5));
         List<String> list1 = new ArrayList<>(Arrays.asList("Apple", "Banana", "Maango", "Cherry", "Orange", "Pi", "Banana", "Banana"));
         List<List<String>> nested = Arrays.asList(
                 Arrays.asList("a", "b"),
@@ -128,7 +128,7 @@ public class Streams {
 
         //Sort a list based on the frequency of elements in descending order.
         System.out.println(list.stream()
-                .sorted(Comparator.comparingInt(x -> Collections.frequency(list, x)))
+                .sorted(Comparator.comparingInt(x -> Collections.frequency(list, x)).reversed())
                 .distinct()
                 .toList());
 

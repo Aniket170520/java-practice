@@ -34,6 +34,8 @@ public class Employee {
 //        Partition employees into <30 and >=30
 //        Increase salary of all employees by 10%
 //        Convert list of employees to Map<department, List<names>>
+        // employee with second highest salary by department
+
 
         //Find all employees older than 30
         System.out.println(employees.stream()
@@ -106,6 +108,12 @@ public class Employee {
                         Collectors.mapping(Employee::getName, Collectors.toList())
                 ));
         System.out.println(map);
+
+        // employee with second highest salary by department
+        System.out.println(employees.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.collectingAndThen(
+                        Collectors.toList(), list -> list.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst())) 
+                ));
 
     }
 
